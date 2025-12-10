@@ -11,17 +11,17 @@ Curso MySQL de 0 a EXPERTO
 comentario largo
 */
 
-# creo una base de datos.
-# el lugar donde se almacenan las base de datos MySQL lo llama SCHEMAS, puedo crear base de datos con el 4to ícono que tiene un mas.
+## creo una base de datos.
+## el lugar donde se almacenan las base de datos MySQL lo llama SCHEMAS, puedo crear base de datos con el 4to ícono que tiene un mas.
 CREATE DATABASE base_de_pratica
 
-# uso/llamo a la BASE DE DATOS creada que quiero modificar
+## uso/llamo a la BASE DE DATOS creada que quiero modificar
 USE base_de_pratica
 
-# creo una nueva base de datos
+## creo una nueva base de datos
 CREATE DATABASE Base_De_Practica
 
-# esto nos muestra todas nuestras bases de datos creadas
+## esto nos muestra todas nuestras bases de datos creadas
 SHOW DATABASES
 
 #-------------------------------------fin capitulo
@@ -29,22 +29,22 @@ SHOW DATABASES
 
 USE base_de_practica
 
-# nos muestra las tablas que hay en una data base
+## nos muestra las tablas que hay en una data base
 SHOW TABLES
 
-# insertar datos en una tabla
+## insertar datos en una tabla
 INSERT INTO nombre_tabla_uno (NOMBRE, APELLIDO, DNI, NACIMIENTO),
 VALUES ("Carlos", "Velloz" "34546776", "121126") ;
 
-# otra opción
-# IMPORTAR ARCHIVO_CSV > CLIC derecho en la tabla > Table Data Import Wizard 
+## otra opción
+## IMPORTAR ARCHIVO_CSV > CLIC derecho en la tabla > Table Data Import Wizard 
 
 SELECT * FROM nombre_tabla_uno
 
 #-------------------------------------fin capitulo
 # cap 09 borrar registros
 
-# eliminar un registro de la tabla
+## eliminar un registro de la tabla
 DELETE FROM nombre_tabla_uno
 WHERE NOMBRE = "Carlos";
 
@@ -54,38 +54,38 @@ WHERE NOMBRE <> "Carlos";
 #-------------------------------------fin capitulo
 # cap 18 Modificaciones
 
-# modificar una tabla
+## modificar una tabla
 USE base_de_pratica
 ALTER TABLE nombre_tabla_uno 
 RENAME nueva_tabla
 
-# borrar columna
+## borrar columna
 ALTER TABLE nueva_tabla
 DROP COLUMN NOMBRE, COLUMN APELLIDO;
 
-# añadir una columna
+## añadir una columna
 ALTER TABLE nueva_tabla 
 ADD NOMBRE VARCHAR (15);
 
-# añadir una columna DESPUES de
+## añadir una columna DESPUES de
 ALTER TABLE nueva_tabla 
 ADD APODO VARCHAR (15)
 AFTER APELLIDO ; 
 
-# añadir una columna en PRIMERA posición
+## añadir una columna en PRIMERA posición
 ALTER TABLE nueva_tabla 
 ADD ID VARCHAR (5)
 FIRST; 
 
-# cambiar el nombre y tipo de dato de una columna
+## cambiar el nombre y tipo de dato de una columna
 ALTER TABLE nueva_tabla 
 CHANGE ID PRUEBA VARCHAR (9);
 
-# eliminar la FK Foreign de una tabla HIJA
+## eliminar la FK Foreign de una tabla HIJA
 ALTER TABLE nueva_tabla  
 DROP FOREIGN KEY DNI;
 
-# eliminar la PK Primary key de una tabla PADRE
+## eliminar la PK Primary key de una tabla PADRE
 ALTER TABLE nueva_tabla_principal 
 DROP PRIMARY KEY;
 
