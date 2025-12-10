@@ -3,9 +3,9 @@ Practica del curso de mysql
 
 Curso MySQL de 0 a EXPERTO
 
-## cap 01 crear base de datos
+cap 01 crear base de datos
 
-## comentario en linea
+comentario en linea
 
 /*
 comentario largo
