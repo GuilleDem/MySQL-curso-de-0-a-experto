@@ -1,4 +1,4 @@
-# MySQL-curso-de-0-a-experto
+# MySQL-curso-de-cero-a-experto
 Practica del curso de mysql
 
 Curso MySQL de 0 a EXPERTO
